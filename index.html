@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Todo-list</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6d4b9a93a2.js" crossorigin="anonymous"></script>
+
+        
+    </head>
+    <body>
+
+        <div id="container" class="container">
+
+            <div id="edit" class="edit">
+                <h1>Editar Tarefa</h1>
+                <div class="edit-input">
+                    <input id="editInput" type="text" onkeydown="setValueKeyEdit(event)">
+                    <button onclick="editar(), sucessEdit(), addIcon()" type="button">Editar</button>
+                </div>
+            </div>
+
+            <h1 id="h1One" class="one">Oque o dia nos reserva ?</h1>
+            <h1 id="h1Two" class="two">Selecione a Tarefa que deseja Editar</h1>
+
+            <div id="inputs" class="box-input">
+                <input id="tarefa" type="text" placeholder="Escreva uma tarefa..." onkeydown="setValueKey(event)">
+                <button onclick="createTask()" type="button">Add Tarefa</button>
+                <button id="btnEdit" onclick="edit(), removeIcon()" class="edit-tafera">Editar Tarefa</button>
+            </div>
+            
+
+            <div class="display" id="display"></div>
+
+
+        </div>
+
+
+        <script src="scripts/index.js"></script>
+    </body>
+</html>
